@@ -3,7 +3,7 @@
   // Search Configuration
   // ==================================================
   "search_settings": {
-    "search_days": 7,
+    "search_days": 5,
     "max_results": 100,
     "max_results_per_source": {}
   },
@@ -24,10 +24,10 @@
   // ==================================================
   "target_domains": {
     "domains": [
-      "cs.CL",    // 自然语言处理
-      "cs.LG",    // 机器学习
-      "cs.AI",    // 人工智能
-      "cs.SE"     // 软件工程
+      "cs.AI",
+      "cs.SE",
+      "cs.CL",
+      "cs.LG"
     ]
   },
 
@@ -37,7 +37,13 @@
   "keywords": {
     "primary_keywords": {
       "weight": 1.0,
-      "keywords": ["code", "LLM", "generation", "benchmark", "programming"]
+      "keywords": [
+        "code",
+        "LLM",
+        "generation",
+        "benchmark",
+        "programming"
+      ]
     },
     "enable_reference_extraction": true,
     "reference_keywords_config": {
@@ -58,7 +64,7 @@
         }
       }
     },
-    "research_context": "研究大语言模型在代码生成和软件工程中的应用，关注代码LLM、程序合成和代码评测基准"
+    "research_context": ""
   },
 
   // ==================================================
@@ -128,7 +134,7 @@
     "on_success": true,
     "on_failure": true,
     "attach_reports": false,
-    "top_n": 5,
+    "top_n": 10,
     "channels": {
       "email": {
         "enabled": false
@@ -172,7 +178,7 @@
   // Concurrency Configuration
   // ==================================================
   "concurrency": {
-    "enabled": False,
+    "enabled": false,
     "workers": 1
   },
 
