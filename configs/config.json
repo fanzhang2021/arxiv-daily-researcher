@@ -13,8 +13,7 @@
   // ==================================================
   "data_sources": {
     "enabled": [
-      "arxiv",
-      "prl"
+      "arxiv"
     ],
     "journals": [],
     "reports_by_source": true
@@ -25,7 +24,10 @@
   // ==================================================
   "target_domains": {
     "domains": [
-      "quant-ph"
+      "cs.CL",    // 自然语言处理
+      "cs.LG",    // 机器学习
+      "cs.AI",    // 人工智能
+      "cs.SE"     // 软件工程
     ]
   },
 
@@ -35,7 +37,7 @@
   "keywords": {
     "primary_keywords": {
       "weight": 1.0,
-      "keywords": []
+      "keywords": ["code", "LLM", "generation", "benchmark", "programming"]
     },
     "enable_reference_extraction": true,
     "reference_keywords_config": {
@@ -56,7 +58,7 @@
         }
       }
     },
-    "research_context": ""
+    "research_context": "研究大语言模型在代码生成和软件工程中的应用，关注代码LLM、程序合成和代码评测基准"
   },
 
   // ==================================================
@@ -170,8 +172,8 @@
   // Concurrency Configuration
   // ==================================================
   "concurrency": {
-    "enabled": true,
-    "workers": 2
+    "enabled": False,
+    "workers": 1
   },
 
   // ==================================================
