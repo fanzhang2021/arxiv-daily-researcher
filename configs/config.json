@@ -3,8 +3,8 @@
   // Search Configuration
   // ==================================================
   "search_settings": {
-    "search_days": 5,
-    "max_results": 100,
+    "search_days": 2,
+    "max_results": 20,
     "max_results_per_source": {}
   },
 
@@ -24,10 +24,8 @@
   // ==================================================
   "target_domains": {
     "domains": [
-      "cs.AI",
       "cs.SE",
       "cs.CL",
-      "cs.LG"
     ]
   },
 
@@ -38,14 +36,10 @@
     "primary_keywords": {
       "weight": 1.0,
       "keywords": [
-        "code",
-        "LLM",
-        "generation",
-        "benchmark",
-        "programming"
+        "code"
       ]
     },
-    "enable_reference_extraction": true,
+    "enable_reference_extraction": false,
     "reference_keywords_config": {
       "max_keywords": 10,
       "similarity_threshold": 0.75,
